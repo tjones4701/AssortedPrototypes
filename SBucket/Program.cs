@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace GameManager
+namespace SBucket
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var game = new GameSetup();
+            Tests.RunTests();
             while (true)
             {
 
