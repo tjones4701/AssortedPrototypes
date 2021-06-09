@@ -27,12 +27,6 @@ namespace GridSystem
             return this;
         }
 
-        public GridPosition Add(GridPosition newPosition)
-        {
-            x = x + (newPosition?.x ?? 0);
-            y = y + (newPosition?.y ?? 0);
-            return this;
-        }
 
         public override string ToString()
         {
