@@ -64,11 +64,14 @@ It is written in NextJS Typescript.
 Open [SBucket Frontend Sourcecode](https://github.com/tjones4701/sbox-bucket-fe) with your browser to see api documentation.
 
 
-
-
 #  SBox GameManager
 
 Game Manager is my first attempt at a C# game manager that I plan to eventually build some sort of turn based game within SBox.
 
 The classes manage registering games for players to join and taking care of the base game state (Turns, Rounds, current player etc...)
+
+#  Grid System
+
+A basic grid system that handles a map, spaces and individual items.
+You can download this project and run dotnet watch run and try it out. Up, Down, Left, Right updates the position and rerenders the grid.
 
