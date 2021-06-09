@@ -39,7 +39,7 @@ Below is a brief overview of the frameworks, languages, concepts etc.. that i us
     -   DevOps/Infastructure Setup (Intermediate)
 
 
-## Technical Experience
+## Modding Experience
 ### Garrys Mod
 - Main Developer Team AWOL GMOD Stranded (like 15 years ago)
 - Contributor to Team AWOL Parkour (again more than 15 years ago)
