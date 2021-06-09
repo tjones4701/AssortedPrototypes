@@ -6,19 +6,22 @@ My public Github profile [GitHub](https://github.com/tjones4701).
 ## Background
 I work as a technical lead for a university building student and governance systems. I have a background as a fullstack developer and have been building enterprise level systems for over 5 years.
 
-Due to the nature of my work most of my "portfolio" is locked under NDA so i am not able to easily show off past experience.
-## Technical Experience
-### Garrys Mod
-- Main Developer Team AWOL GMOD Stranded (like 15 years ago)
-- Contributor to Team AWOL Parkour (again more than 15 years ago)
-    - [Old link to a parkour group](https://steamcommunity.com/groups/awolparkour)
+Due to the nature of my work most of my "portfolio" can't be shown due to NDA.
+I am able to show off some screenshots for the current product I am the technical lead for.
+This product is a progressive web application built in typescript react, utilising a headless cms for content and a microservice integration platform for student apis.
+#### Today Page
+![Imgur Image](https://imgur.com/vw4G4zU.jpg)
+#### Calendar
+![Imgur Image](https://imgur.com/DKQ2u0o.jpg)
+#### Discover Page
+![Imgur Image](https://imgur.com/gtvS7bm.jpg)
+![Imgur Image](https://imgur.com/w4WiCh9.jpg)
+#### Notifications
+![Imgur Image](https://imgur.com/RfOre8N.jpg)
+#### Study Page (Shows historic information)
+![Imgur Image](https://imgur.com/1z8CWNz.jpg)
 
-### Rust
--   I have done some small modding for Rust about 5 years ago (maybe longer):
-    -   Developed a mod that allowed servers to save kills, playtime etc.. to a website for people to view.
-    -   Developed Various chat commands that made managing servers easier (kick, ban, giveItem, takeItem etc..). 
 
-### Professional
 Below is a brief overview of the frameworks, languages, concepts etc.. that i use in my day to day job.
 - Languages/Frameworks
     -   Typescript (Advanced)
@@ -34,6 +37,18 @@ Below is a brief overview of the frameworks, languages, concepts etc.. that i us
     -   Database/Data structure design (Advanced)
     -   Automated Testing (Intermediate)
     -   DevOps/Infastructure Setup (Intermediate)
+
+
+## Technical Experience
+### Garrys Mod
+- Main Developer Team AWOL GMOD Stranded (like 15 years ago)
+- Contributor to Team AWOL Parkour (again more than 15 years ago)
+    - [Old link to a parkour group](https://steamcommunity.com/groups/awolparkour)
+
+### Rust
+-   I have done some small modding for Rust about 5 years ago (maybe longer):
+    -   Developed a mod that allowed servers to save kills, playtime etc.. to a website for people to view.
+    -   Developed Various chat commands that made managing servers easier (kick, ban, giveItem, takeItem etc..). 
 
 # SBucket
 
