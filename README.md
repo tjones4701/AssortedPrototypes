@@ -3,7 +3,27 @@ I go by either Stinkfire or DrJones [Steam ID](https://steamcommunity.com/id/sti
 
 My public Github profile [GitHub](https://github.com/tjones4701).
 
-## Background
+
+## Modding Experience
+### Garrys Mod - Team AWOL
+I was part of a group that managed what was at the most popular largest Australian GMOD servers.
+As part of this group I was responsible for developing and maintaining our gamemodes and addons.
+
+The gamemodes I was a primary developer for were as follows:
+
+#### TEAM AWOL Stranded
+These included our Team AWOL GMOD Stranded
+- Main Developer Team AWOL GMOD Stranded (like 15 years ago)
+- Contributor to Team AWOL Parkour (again more than 15 years ago)
+    - [Old link to a parkour group](https://steamcommunity.com/groups/awolparkour)
+
+### Rust
+-   I have done some small modding for Rust about 5 years ago (maybe longer):
+    -   Developed a mod that allowed servers to save kills, playtime etc.. to a website for people to view.
+    -   Developed Various chat commands that made managing servers easier (kick, ban, giveItem, takeItem etc..). 
+
+
+## Professional Background
 I work as a technical lead for a university building student and governance systems. I have a background as a fullstack developer and have been building enterprise level systems for over 5 years.
 
 Due to the nature of my work most of my "portfolio" can't be shown due to NDA.
@@ -38,17 +58,6 @@ Below is a brief overview of the frameworks, languages, concepts etc.. that i us
     -   Automated Testing (Intermediate)
     -   DevOps/Infastructure Setup (Intermediate)
 
-
-## Modding Experience
-### Garrys Mod
-- Main Developer Team AWOL GMOD Stranded (like 15 years ago)
-- Contributor to Team AWOL Parkour (again more than 15 years ago)
-    - [Old link to a parkour group](https://steamcommunity.com/groups/awolparkour)
-
-### Rust
--   I have done some small modding for Rust about 5 years ago (maybe longer):
-    -   Developed a mod that allowed servers to save kills, playtime etc.. to a website for people to view.
-    -   Developed Various chat commands that made managing servers easier (kick, ban, giveItem, takeItem etc..). 
 
 # SBucket
 
