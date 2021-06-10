@@ -1,0 +1,79 @@
+AddCSLuaFile("cl_init.lua")
+AddCSLuaFile("shared.lua")
+
+include("shared.lua")
+
+--Called when an entity is no longer touching this SENT.
+--Return: Nothing
+function ENT:EndTouch(entEntity)
+end
+
+--Called when the SENT is spawned
+--Return: Nothing
+function ENT:Initialize()
+	self.Entity:SetModel("models/combine_helicopter/helicopter_bomb01.mdl")
+	self.Entity:SetMaterial("models/shiny")
+	self.Entity:SetColor(255,255,0,255)
+ 	self.Entity:PhysicsInit( SOLID_VPHYSICS )
+	self.Entity:SetMoveType( MOVETYPE_VPHYSICS )
+	self.Entity:SetSolid( SOLID_VPHYSICS )
+	self.Entity.Time = 0
+	self.Entity.Phys = self:GetPhysicsObject()
+	self.Entity.MoveTime = CurTime() + 1
+end
+
+function ENT:Use(ply)
+	if self.Entity.Time < CurTime() then
+		self.Entity.Time = CurTime() + 10
+		EffectFunc(self.Entity:GetPos(), 100, "special_newyears")
+	end
+end
+
+function ENT:AcceptInput(input, ply)
+end
+
+--Called when the entity key values are setup (either through calls to ent:SetKeyValue, or when the map is loaded).
+--Return: Nothing
+function ENT:KeyValue(k,v)
+end
+
+--Called when a save-game is loaded.
+--Return: Nothing
+function ENT:OnRestore()
+end
+
+--Called when something hurts the entity.
+--Return: Nothing
+function ENT:OnTakeDamage(dmiDamage)
+end
+
+--Controls/simulates the physics on the entity.
+--Return: (SimulateConst) sim, (Vector) linear_force and (Vector) angular_force
+function ENT:PhysicsSimulate(pobPhysics,numDeltaTime)
+end
+
+--Called when an entity starts touching this SENT.
+--Return: Nothing
+function ENT:StartTouch(entEntity)
+end
+
+--Called when the SENT thinks.
+--Return: Nothing
+function ENT:Think()
+	if self.Entity.MoveTime < CurTime() then
+		self.Entity.MoveTime = CurTime() + 2
+		self.Entity.Phys:AddVelocity( Vector( 0, 0, 200 ) )
+		self.Entity.Phys:AddAngleVelocity( VectorRand() * 350 )
+		self.Entity:SetColor(math.random(0,255),math.random(0,255),math.random(0,255),255)	
+	end
+end
+
+--Called when an entity touches this SENT.
+--Return: Nothing
+function ENT:Touch(entEntity)
+end
+
+--Called when: ?
+--Return: TRANSMIT_ALWAYS, TRANSMIT_NEVER or TRANSMIT_PVS
+function ENT:UpdateTransmitState(entEntity)
+end

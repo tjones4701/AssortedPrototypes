@@ -1,0 +1,17 @@
+"Gamemode"
+{
+	"name"		"AWOL Stranded"
+	"version"	"2.2.1"
+
+	"author_name"	"Bithmar"
+	"author_email"	""
+	"author_url"	""
+	
+	"info"		""
+	"hide"		"0"
+
+	"mappattern"
+	{
+		"1"	"^gms_"
+	}
+}

@@ -1,0 +1,65 @@
+function DrawCSegment(degs, dege, rad, res, CenterX, CenterY)
+	local verttab = {}
+	degs = CyclicClamp(degs)
+	dege = CyclicClamp(dege)
+	if degs>dege then
+		local temp = dege
+		dege = degs
+		degs = temp
+	end
+	local deg=degs
+	if degs+dege<(360-res) then
+	local fvert = {}
+	fvert.x=CenterX
+	fvert.y=CenterY
+	table.insert(verttab, fvert)
+	end
+	while (deg<dege or (dege<degs and (deg>=degs or deg<dege))) do
+		local vert = {}
+		vert.x=(math.sin(math.rad(deg))*rad)+CenterX
+		vert.y=(math.cos(math.rad(deg))*rad)+CenterY
+		deg=CyclicClamp(deg+res)
+		table.insert(verttab, vert)
+	end
+	surface.DrawPoly(verttab)
+end
+
+function CheckCycle(val)
+	return (val>360 or val<0)
+end
+
+function CyclicClamp(val)
+	if val>360 then val = val -360 end
+	if val<0 then val = val +360 end
+	if CheckCycle(val) then val = CyclicClamp(val) end
+	return val
+end
+
+if ProcessCompleteTime then
+		local w = SW / 12
+		local h = SH / 12
+		local w2,h2 = surface.GetTextSize(CurrentProcess)
+		local x = (ScrW()) - (w * 1.2) - (w2 / 2.5)
+		local y = (ScrH()) - (h * 1.2)
+		local centx = x + w/2
+		local centy = y + h/2
+		local height = (SH / 28)
+		local radius = (w + h) / (3.2 * 2)
+		draw.RoundedBox(16, x - 5, y - 5, w + 10, h + 10, Color(0,0,0,180))
+		
+		if (w2 * 2) < w + (w /4) then
+			w2 = w + (w /4)
+		else
+			w2 = w2*2
+		end
+		draw.RoundedBox(16, centx- (w2 / 2), y - (h / 2), w2, h + (h / 1.5), Color(0,0,0,180))
+		
+		draw.RoundedBox(16, x, y, w, h, Color(180,180,180,180))
+		
+		draw.RoundedBox(4, centx - ((w/ 10) / 2), centy - ((h / 10) / 2), (w/ 10), (h / 10), Color(0,0,0,255))
+		
+		draw.SimpleText( CurrentProcess, "ResFont6", centx, y - (h / 4) , Color( 255, 255, 255, 255 ), 1, 1 )
+		local second = ( RealTime() - ProcessStart)
+		surface.SetDrawColor(0,255,0,255)
+		DrawCSegment(0, second*(360/ProcessCompleteTime), radius, 20,centx,centy)
+	end

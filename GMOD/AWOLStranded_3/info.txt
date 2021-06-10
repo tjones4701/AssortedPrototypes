@@ -1,0 +1,18 @@
+"Gamemode"
+{
+	"name"		"AWOLParkour"
+	"version"	"0.1"
+
+	"author_name"	"raBBish/Polly, takua108, Mechanical Mind"
+	"author_email"	""
+	"author_url"	""
+	
+	"icon"		""
+	"info"		""
+	"hide"		""
+
+	"mappattern"
+	{
+		"1"	"^gpk_"
+	}
+}

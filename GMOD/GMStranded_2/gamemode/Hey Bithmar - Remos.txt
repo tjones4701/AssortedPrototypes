@@ -1,0 +1,3 @@
+Hey, Remos here, welcome aboard :D hope to see some cool shit on the stranded server soon!
+
+P.S. Not sure, but you may wanna AddCSLuaFile("cl_NewHelpMenu.lua")

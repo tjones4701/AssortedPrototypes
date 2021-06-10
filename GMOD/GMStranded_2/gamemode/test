@@ -1,0 +1,9 @@
+
+function DrawNight()
+local tab = {}
+tab.pp_colormod_contrast = 1
+tab.pp_colormod_color = 1
+tab.pp_colormod_brightness = nightval -- from -1 to 1, -1 being black, 1 being white
+DrawColorModify(tab)
+end
+hook.Add("RenderScreenspaceEffects", "NightTime" DrawNight)

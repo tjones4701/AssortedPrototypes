@@ -1,0 +1,17 @@
+"Gamemode"
+{
+	"name"		"AWOLSKY"
+	"version"	"2.9"
+
+	"author_name"	"Bithmar (Heavily Modded),Mechanical Mind, MrElite,Sylver"
+	"author_email"	""
+	"author_url"	"www.teamawol.net"
+	
+	"info"		""
+	"hide"		"0"
+
+	"mappattern"
+	{
+		"1"	"^cns_"
+	}
+}

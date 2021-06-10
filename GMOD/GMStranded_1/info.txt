@@ -1,0 +1,12 @@
+"Gamemode"
+{
+	"name"		"Gmod Stranded"
+	"version"	"1.8"
+
+	"author_name"	"jA_cOp"
+	"author_email"	"jakob_oevrum@hotmail.com"
+	"author_url"	""
+	
+	"info"		""
+	"hide"		"0"
+}
