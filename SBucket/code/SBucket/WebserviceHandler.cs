@@ -59,7 +59,8 @@ namespace SBucket
                 new SbucketEndpoint("ORGANISATION_DATAS", $"organisations/{OrganisationId}/data", 1);
                 new SbucketEndpoint("ORGANISATION_DATA", $"organisations/{OrganisationId}/data/:Code", 1);
 
-                SBucketHttpClient.client.BaseAddress = new System.Uri("http://localhost:8080");
+                // SBucketHttpClient.client.BaseAddress = new System.Uri("https://localhost:8080");
+                SBucketHttpClient.client.BaseAddress = new System.Uri("https://api.sbucket.net");
                 SBucketHttpClient.client.DefaultRequestHeaders.Add("server-api-id", PublicKey);
                 SBucketHttpClient.client.DefaultRequestHeaders.Add("server-api-key", PublicSecret);
             }
