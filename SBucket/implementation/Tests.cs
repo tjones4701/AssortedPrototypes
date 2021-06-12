@@ -16,7 +16,8 @@ namespace SBucket
             // await TestsPlayer.ChangingMetadata();
 
             // await TestsPlayerData.RunCreatePlayerData();
-            await TestsPlayerData.RunGetPlayersData();
+            // await TestsPlayerData.RunGetPlayersData();
+            await CharacterSystemTest.RunCharacterSystemTest();
 
         }
         public Tests()

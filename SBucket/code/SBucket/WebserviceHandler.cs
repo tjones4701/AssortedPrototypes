@@ -56,6 +56,8 @@ namespace SBucket
                 new SbucketEndpoint("PLAYERS", $"organisations/{OrganisationId}/players", 1);
                 new SbucketEndpoint("PLAYER_PLAYER_DATAS", $"organisations/{OrganisationId}/players/:PlayerId/player-data", 1);
                 new SbucketEndpoint("PLAYER_PLAYER_DATA", $"organisations/{OrganisationId}/players/:PlayerId/player-data/:Code", 1);
+                new SbucketEndpoint("ORGANISATION_DATAS", $"organisations/{OrganisationId}/data", 1);
+                new SbucketEndpoint("ORGANISATION_DATA", $"organisations/{OrganisationId}/data/:Code", 1);
 
                 SBucketHttpClient.client.BaseAddress = new System.Uri("http://localhost:8080");
                 SBucketHttpClient.client.DefaultRequestHeaders.Add("server-api-id", PublicKey);

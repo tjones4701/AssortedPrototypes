@@ -76,7 +76,7 @@ namespace SBucket
 
                 return playerData.Metadata;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return default(T);
             }
