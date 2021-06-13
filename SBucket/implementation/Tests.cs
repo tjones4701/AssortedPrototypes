@@ -7,7 +7,8 @@ namespace SBucket
         public static void RunTests()
         {
             // TestsPlayer.RunPlayerSerialisation();
-            RunAsyncTests();
+            VoxelBuilder.VoxelBuilder.RunVoxelBuilderTests();
+            // RunAsyncTests();
         }
         public static async void RunAsyncTests()
         {
@@ -17,7 +18,7 @@ namespace SBucket
 
             // await TestsPlayerData.RunCreatePlayerData();
             // await TestsPlayerData.RunGetPlayersData();
-            await CharacterSystemTest.RunCharacterSystemTest();
+            // await CharacterSystemTest.RunCharacterSystemTest();
 
         }
         public Tests()

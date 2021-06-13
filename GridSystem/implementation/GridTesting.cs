@@ -22,6 +22,7 @@ namespace GridSystem
             Message = "I have just moved";
         }
     }
+
     class GridSystemImplementation
     {
         public GridSystemImplementation()
